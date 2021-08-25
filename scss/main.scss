@@ -12,6 +12,8 @@ $text--color: #524e4e;
   }
   // this is the navbar
   .nav {
+    position: sticky;
+    top: 0;
     width: 100%;
     height: 39px;
     background-color: $secondary--color;
@@ -83,6 +85,7 @@ $text--color: #524e4e;
     .main__h3--typing {
       font-weight: 700;
       font-size: 20px;
+      color: black;
     }
     .main__div--underline {
       background-color: black;
@@ -90,4 +93,48 @@ $text--color: #524e4e;
       height: 3px;
     }
   }
+  // end of main
+
+  // tech stack and software section
+  .section {
+    width: 100%;
+    &__h3 {
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: 10px;
+      color: $text--color;
+      text-align: center;
+    }
+    // first div of tech stack
+    &__div {
+      display: flex;
+      justify-content: space-around;
+      &__img {
+        margin-top: -10px;
+        width: 71px;
+      }
+      .sass {
+        margin-right: -100px;
+        width: 66px;
+      }
+      .python {
+        width: 66px;
+      }
+    }
+    // second div for software
+    .section__div__h3--padding--top {
+      margin-top: -10px;
+    }
+    .section__div--software--modifier {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 70px;
+        height: 70px;
+        padding: 0 5px;
+      }
+    }
+    // end fo second div for software
+  }
+  // this is the start of project
 }
