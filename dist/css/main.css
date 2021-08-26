@@ -93,4 +93,53 @@
       .section .section__div--software--modifier img {
         width: 70px;
         height: 70px;
-        padding: 0 5px; } }
+        padding: 0 5px; }
+  .section--project .section__h3--myprojects {
+    font-size: 22px;
+    font-weight: bold;
+    color: #524e4e;
+    margin-bottom: 20px; }
+  .section--project .section__div--firstProj,
+  .section--project .section__div--secondProj,
+  .section--project .section__div--thirdProj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0; }
+  .section--project img {
+    width: 337px;
+    height: 150px; }
+  .section--project .section__div__h3 {
+    color: #524e4e;
+    margin-left: -237px;
+    padding-left: 10px;
+    margin-top: 5px; }
+  .section--project .section__div__h3--push {
+    margin-left: -267px; }
+  .section--project .section__div__p {
+    color: #524e4e;
+    text-align: justify;
+    width: 337px;
+    font-size: 10px;
+    padding: 0 5px; }
+  .section--project .section__div__btn {
+    background-color: #c1c1c1;
+    width: 100px;
+    height: 15px;
+    border-radius: 7.5px;
+    border: none;
+    font-size: 9px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px; }
+  .section--info .section__h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #524e4e; }
+  .section--info .section__div--firstRow {
+    margin-top: -30px;
+    justify-content: center; }
+  .section--info .section__div--secondRow {
+    justify-content: center;
+    margin-top: -70px; } }

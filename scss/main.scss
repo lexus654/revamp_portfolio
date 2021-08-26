@@ -10,6 +10,7 @@ $text--color: #524e4e;
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
   }
+
   // this is the navbar
   .nav {
     position: sticky;
@@ -137,4 +138,72 @@ $text--color: #524e4e;
     // end fo second div for software
   }
   // this is the start of project
+  // general classes
+  .section--project {
+    .section__h3--myprojects {
+      font-size: 22px;
+      font-weight: bold;
+      color: $text--color;
+      margin-bottom: 20px;
+    }
+    .section__div--firstProj,
+    .section__div--secondProj,
+    .section__div--thirdProj {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 30px 0;
+    }
+    img {
+      width: 337px;
+      height: 150px;
+    }
+    .section__div__h3 {
+      color: $text--color;
+      margin-left: -237px;
+      padding-left: 10px;
+      margin-top: 5px;
+    }
+    .section__div__h3--push {
+      margin-left: -267px;
+    }
+    .section__div__p {
+      color: $text--color;
+      text-align: justify;
+      width: 337px;
+      font-size: 10px;
+      padding: 0 5px;
+    }
+    .section__div__btn {
+      background-color: #c1c1c1;
+      width: 100px;
+      height: 15px;
+      border-radius: 7.5px;
+      border: none;
+      font-size: 9px;
+      color: black;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+  // end of project section
+
+  // this is the footer contains my info
+  .section--info {
+    .section__h3 {
+      font-size: 22px;
+      font-weight: bold;
+      color: $text--color;
+    }
+
+    .section__div--firstRow {
+      margin-top: -30px;
+      justify-content: center;
+    }
+    .section__div--secondRow {
+      justify-content: center;
+      margin-top: -70px;
+    }
+  }
 }
