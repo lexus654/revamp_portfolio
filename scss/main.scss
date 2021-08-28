@@ -10,6 +10,9 @@ $text--color: #524e4e;
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
   }
+  main {
+    // display: none;
+  }
   // we need to add overflow
 
   // this is the navbar
@@ -27,11 +30,12 @@ $text--color: #524e4e;
     &__div__h3 {
       text-align: center;
       margin-left: -20px;
+      font-weight: normal;
     }
     // as astra
     &__div__p {
       font-size: 12px;
-      font-weight: bolder;
+      font-weight: 600;
       text-align: center;
     }
     // this is the hamburger menu
@@ -63,7 +67,7 @@ $text--color: #524e4e;
   }
 
   // section of carousel
-  .main {
+  .section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,8 +75,9 @@ $text--color: #524e4e;
       margin-top: 20px;
       color: $text--color;
       text-align: center;
+      font-weight: lighter;
     }
-    .main__div--carousel {
+    .section__div--carousel {
       margin-top: 15px;
       width: 347px;
       height: 218px;
@@ -84,12 +89,12 @@ $text--color: #524e4e;
       font-size: 10px;
       text-align: center;
     }
-    .main__h3--typing {
-      font-weight: 700;
+    .section__h3--typing {
+      font-weight: 400;
       font-size: 20px;
       color: black;
     }
-    .main__div--underline {
+    .section__div--underline {
       background-color: black;
       width: 347px;
       height: 3px;
@@ -106,7 +111,11 @@ $text--color: #524e4e;
       margin-top: 10px;
       color: $text--color;
       text-align: center;
+      &--normal {
+        font-weight: normal;
+      }
     }
+
     // first div of tech stack
     &__div {
       display: flex;
@@ -165,6 +174,7 @@ $text--color: #524e4e;
       margin-left: -237px;
       padding-left: 10px;
       margin-top: 5px;
+      font-weight: 600;
     }
     .section__div__h3--push {
       margin-left: -267px;
@@ -184,7 +194,7 @@ $text--color: #524e4e;
       border: none;
       font-size: 9px;
       color: black;
-      font-weight: bold;
+      font-weight: 600;
       margin-top: 10px;
     }
   }
@@ -205,6 +215,124 @@ $text--color: #524e4e;
     .section__div--secondRow {
       justify-content: center;
       margin-top: -70px;
+    }
+  }
+
+  // this is the start of hamburger menu
+  .section--hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    display: none; ///////////////////////////////////////////////////////////////////////////////////////////////
+    .section__nav {
+      width: 307px;
+      height: 46px;
+      background-color: $secondary--color;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      justify-content: space-between;
+      &__p {
+        font-size: 20px;
+        color: $text--color;
+        font-weight: 600;
+      }
+    }
+    // start of hamburger cross
+    .section__nav__div--hmaburgerCross {
+      width: 41px;
+      height: 5px;
+      background-color: #c4c4c4;
+      border-radius: 6px;
+      position: relative;
+    }
+    .section__nav__div--hmaburgerCross::after {
+      content: "";
+      background-color: #c4c4c4;
+      width: 41px;
+      height: 5px;
+      position: absolute;
+      transform: rotate(-90deg);
+      background-color: #c4c4c4;
+      border-radius: 6px;
+    }
+    .section__nav__div--hmaburgerCross {
+      transform: rotate(45deg);
+    }
+    // end of hamburger cross
+
+    // start of info
+    .section__div--container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 307px;
+      height: 191px;
+      background-color: burlywood;
+      border-bottom-left-radius: 80px;
+      border-bottom-right-radius: 80px;
+      background: url(/try4.jpeg) no-repeat center center/cover;
+
+      img {
+        width: 73px;
+        height: 73px;
+        border-radius: 50%;
+        margin-top: -10px;
+      }
+      .section__div__p {
+        font-size: 16px;
+        color: black;
+        font-weight: 500;
+        margin-top: -30px;
+      }
+      .section__div__h3 {
+        text-align: center;
+        margin-top: -30px;
+        font-weight: 600;
+        font-size: 19px;
+      }
+    }
+    // end of info
+    .section__hamburger--container {
+      margin-top: 10px;
+      width: 307px;
+      padding-left: 10px;
+      // general class
+      .section__div__p {
+        margin-left: 40px;
+        font-size: 23px;
+        color: $text--color;
+        font-weight: normal;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .section__div__p--small {
+        margin-left: 40px;
+        font-size: 23px;
+        color: $text--color;
+        font-weight: normal;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      span {
+        margin-left: 40px;
+        width: 221px;
+        height: 1px;
+        background: $text--color;
+      }
+      // end of general class
+      .section__div--project,
+      .section__div--connect {
+        display: flex;
+        flex-direction: column;
+        .section__div__h1 {
+          color: $text--color;
+          font-size: 30px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+        }
+      }
     }
   }
 }
