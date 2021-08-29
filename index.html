@@ -51,11 +51,27 @@
       <!-- Get to know me section -->
       <section class="section section--aboutme">
         <h3 class="section__h3 section__h3--normal">Get to know me</h3>
-        <div class="section__div section__div--carousel"></div>
-        <p class="section__p">
-          diam vel quam elementum pulvinar etiam non quam lacus suspendisse
-          faucibus
-        </p>
+        <div class="section_div section_div--lines">
+          <div id="line-0" class="lines"></div>
+          <div id="line-1" class="lines"></div>
+          <div id="line-2" class="lines"></div>
+        </div>
+        <div class="section__div section__div--carousel">
+          <img
+            id="carousel--img"
+            class="
+              section__div__img__carousel section__div__img__carousel--change
+              fade
+            "
+            src="./carousel-1.png"
+            alt=""
+            width="347px"
+            height="180px"
+          />
+          <p id="carousel--text" class="section__p fade">
+            My hobby is watching anime, My favourite anime is Black Clover
+          </p>
+        </div>
         <h3 class="section__h3 section__h3--typing">
           Future Full Stack Web Developer
         </h3>
@@ -225,5 +241,7 @@
         </div>
       </div>
     </section>
+
+    <script src="/script.js"></script>
   </body>
 </html>
