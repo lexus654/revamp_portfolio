@@ -119,6 +119,9 @@ $text--color: #524e4e;
       0% {
         opacity: 0;
       }
+      15% {
+        opacity: 0;
+      }
       20% {
         opacity: 10;
       }
@@ -201,42 +204,69 @@ $text--color: #524e4e;
     .section__div--secondProj,
     .section__div--thirdProj {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
-      margin: 30px 0;
+      align-items: center;
+      justify-content: center;
+      width: 352px;
+      height: 263px;
+      background-color: $secondary--color;
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: 8px 8px 11px -6px rgba(0, 0, 0, 0.61);
     }
     img {
-      width: 337px;
-      height: 150px;
+      width: 301px;
+      height: 124px;
+      border-radius: 10px;
+      box-shadow: 8px 8px 11px -6px rgba(0, 0, 0, 0.61);
+      margin-bottom: 15px;
+      margin-top: 10px;
     }
     .section__div__h3 {
       color: $text--color;
-      margin-left: -237px;
-      padding-left: 10px;
+      margin-left: -200px;
       margin-top: 5px;
       font-weight: 600;
     }
     .section__div__h3--push {
-      margin-left: -267px;
+      margin-left: -237px;
     }
     .section__div__p {
       color: $text--color;
       text-align: justify;
-      width: 337px;
+      width: 240px;
+
+      height: 56px;
       font-size: 10px;
       padding: 0 5px;
     }
+    .horizontal {
+      display: flex;
+      justify-content: space-between;
+    }
     .section__div__btn {
-      background-color: #c1c1c1;
-      width: 100px;
-      height: 15px;
-      border-radius: 7.5px;
+      background-color: #ffffff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
       border: none;
       font-size: 9px;
       color: black;
       font-weight: 600;
       margin-top: 10px;
+      margin-left: 30px;
+      box-shadow: 8px 8px 22px -6px rgba(0, 0, 0, 0.35);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 28px;
+        width: 28px;
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
     }
   }
   // end of project section
